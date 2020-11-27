@@ -1,0 +1,118 @@
+body
+{
+    background-color: #333;
+    min-width: 370px;
+}
+#info
+{
+    font-size: 3em;
+    color: greenyellow;
+}
+nav
+{
+    padding: 10pt 10pt;
+    margin-bottom: 2pt;
+    background-color: #333;
+    overflow: hidden;
+}
+main
+{
+    padding: 2%;
+    padding-right: 0%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: lemonchiffon;
+    height: 100rem;
+    margin-left: 0.1%;
+}
+@keyframes glowing 
+{
+    0% { height: 40pt; width:40pt; margin-top: 10pt; }
+    50% { height: 60pt; width:60pt; margin-top: 0pt; }
+    100% { height: 40pt; width:40pt; margin-top: 10pt; }
+}
+nav a
+{
+    font-weight: bolder;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 5px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+nav a
+{
+    font-size: auto;
+    padding: 8px 3px;
+}
+nav a:hover 
+{
+    background-color: #ddd;
+    color: black;
+}
+nav a.active
+{
+    background-color: gray;
+}
+article 
+{
+    display: grid;
+    grid-gap: 0pt;
+    width: 15.3%;
+    border-width: 1%;
+    border: 0.3rem solid transparent;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+    height: auto;
+    min-width: 5rem;
+}
+article img
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+article h2
+{
+    font-size: auto;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+article p
+{
+    font-size: auto;
+    text-align: center;
+    margin: 0%;
+    height: auto;
+    min-height: 3rem;
+    max-height: 10rem;
+    overflow: auto;
+}
+footer
+{
+    float: right;
+}
+
+@media screen and (orientation:portrait)
+{
+article 
+{
+    width: 22%;
+}
+article h2
+{
+    font-size: 1rem;
+}
+article p
+{
+    font-size: 0.7rem;
+}
+}
