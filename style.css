@@ -25,8 +25,7 @@ main
     justify-content: flex-start;
     align-content: flex-start;
     background-color: lemonchiffon;
-    height: 100rem;
-    margin-left: 0.1%;
+    height: auto;
 }
 @keyframes glowing 
 {
@@ -62,7 +61,7 @@ nav a.active
 {
     background-color: gray;
 }
-article 
+main article 
 {
     display: grid;
     grid-gap: 0pt;
@@ -73,20 +72,20 @@ article
     height: auto;
     min-width: 5rem;
 }
-article img
+main article img
 {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-article h2
+main article h2
 {
     font-size: auto;
     height: auto;
     text-align: center;
     overflow: hidden;
 }
-article p
+main article p
 {
     font-size: auto;
     text-align: center;
@@ -100,18 +99,97 @@ footer
 {
     float: right;
 }
+/*Slider*/
+.slider-all
+{
+    background-color: lemonchiffon;
+}
+#slider {
+    
+    position: relative;
+	text-align: center;
+    margin: 0 auto;
+}
+#slides article{
+	width: 33.333333333333333%;
+    float: left;
+}
 
+#slides .image{
+	width: 300%;
+    line-height: 0;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider-all article img{
+	width: 100%;
+}
+
+#desktop:checked ~ #slider{
+	width: 100%;
+}
+
+label{
+	cursor: pointer;
+}
+
+.slider-all input{
+	display: none;
+}
+
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+
+#active label{
+	border-radius: 10px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active{
+	margin: 2% 0 0;
+	text-align: center;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3){
+	background: #18a3dd;
+	border-color: #18a3dd;
+}
+
+#slides .image{
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+/*portrait*/
 @media screen and (orientation:portrait)
 {
-article 
+main article 
 {
     width: 22%;
 }
-article h2
+main article h2
 {
     font-size: 1rem;
 }
-article p
+main article p
 {
     font-size: 0.7rem;
 }
