@@ -15,15 +15,20 @@ nav
     background-color: #333;
     overflow: hidden;
 }
-main
+#allt, #Type1, #Type2, #Type3
 {
-    padding: 2%;
-    padding-right: 0%;
     overflow: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
+    height: auto;
+}
+main
+{
+    padding: 2%;
+    padding-right: 0%;
+    overflow: auto;
     background-color: lemonchiffon;
     height: auto;
 }

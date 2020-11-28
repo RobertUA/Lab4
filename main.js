@@ -1,4 +1,4 @@
-var timer;
+let timer;
 AutoSlider();
 
 function AutoSlider()
@@ -21,5 +21,48 @@ function AutoSlider()
             document.getElementById("switch1").checked = true;
         }
         AutoSlider();
-    }, 5000);
+    }, 10000);
+}
+function hashchanged()
+{
+    switch(window.location.hash)
+    {
+        case "#all": 
+            {
+                document.getElementById("allt").style.display='flex';
+                document.getElementById("Type1").style.display='none';
+                document.getElementById("Type2").style.display='none';
+                document.getElementById("Type3").style.display='none';
+                break;
+            }
+        case "#type1":
+            {
+                document.getElementById("allt").style.display='none';
+                document.getElementById("Type1").style.display='flex';
+                document.getElementById("Type2").style.display='none';
+                document.getElementById("Type3").style.display='none';
+                break;
+            }
+        case "#type2":
+            {
+                document.getElementById("allt").style.display='none';
+                document.getElementById("Type1").style.display='none';
+                document.getElementById("Type2").style.display='flex';
+                document.getElementById("Type3").style.display='none';
+                break;
+            }
+        case "#type3":
+            {
+                document.getElementById("allt").style.display='none';
+                document.getElementById("Type1").style.display='none';
+                document.getElementById("Type2").style.display='none';
+                document.getElementById("Type3").style.display='flex';
+                break;
+            }
+        default:
+            {
+                console.log(window.location.hash);
+                window.location.hash="#all";
+            }
+    }
 }
