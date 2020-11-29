@@ -2,13 +2,19 @@
     "sales":
     [
         {
-            "logo": "media/r1.png"
+            "logo": "media/r1.png",
+            "url": "ad1",
+            "text": "Саме так, тільки сьогодні ціна однієї піци = ціні трьох!!!"
         },
         {
-            "logo": "media/r2.png"
+            "logo": "media/r2.png",
+            "url": "ad2",
+            "text": "Саме так, де ще ви зустрінете таку щедрість? !!!"
         },
         {
-            "logo": "media/r3.png"
+            "logo": "media/r3.png",
+            "url": "ad3",
+            "text": "Саме так, знижка аж 10% при націнці всього 50%"
         }
     ],
     "products": 
