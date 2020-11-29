@@ -20,6 +20,7 @@
     "products": 
     [
         {
+            "id": 0,
             "url": "pizza1",
             "productName": "Pizza 1",
             "productDescription": "About Pizza 1",
@@ -29,6 +30,7 @@
             "categoryId": 1
         },
         {
+            "id": 1,
             "url": "pizza2",
             "productName": "Pizza 2",
             "productDescription": "About Pizza 2",
@@ -38,16 +40,17 @@
             "categoryId": 2
         },
         {
+            "id": 2,
             "url": "pizza3",
             "productName": "Pizza 3",
             "productDescription": "About Pizza 3",
             "price": 103.05,
-            
             "AdInfo": "lalalala крута піца, найркаща піца - це піца №3",
             "image": "media/pizza3.jpg",
             "categoryId": 3
         },
         {
+            "id": 3,
             "url": "pizza4",
             "productName": "Pizza 4",
             "productDescription": "About Pizza 4",
@@ -58,6 +61,7 @@
             "categoryId": 1
         },
         {
+            "id": 4,
             "url": "pizza5",
             "productName": "Pizza 5",
             "productDescription": "About Pizza 5",
@@ -67,6 +71,7 @@
             "categoryId": 2
         },
         {
+            "id": 5,
             "url": "pizza6",
             "productName": "Pizza 6",
             "productDescription": "About Pizza 6",
