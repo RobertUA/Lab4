@@ -18,6 +18,7 @@
             "productName": "Pizza 1",
             "productDescription": "About Pizza 1",
             "price": 101.05,
+            "AdInfo": "lalalala крута піца, найркаща піца - це піца №1",
             "image": "media/pizza1.jpg",
             "categoryId": 1
         },
@@ -26,6 +27,7 @@
             "productName": "Pizza 2",
             "productDescription": "About Pizza 2",
             "price": 102.05,
+            "AdInfo": "lalalala крута піца, найркаща піца - це піца №2",
             "image": "media/pizza2.jpg",
             "categoryId": 2
         },
@@ -34,6 +36,8 @@
             "productName": "Pizza 3",
             "productDescription": "About Pizza 3",
             "price": 103.05,
+            
+            "AdInfo": "lalalala крута піца, найркаща піца - це піца №3",
             "image": "media/pizza3.jpg",
             "categoryId": 3
         },
@@ -42,6 +46,8 @@
             "productName": "Pizza 4",
             "productDescription": "About Pizza 4",
             "price": 104.05,
+            
+            "AdInfo": "lalalala крута піца, найркаща піца - це піца №4",
             "image": "media/pizza4.jpg",
             "categoryId": 1
         },
@@ -50,6 +56,7 @@
             "productName": "Pizza 5",
             "productDescription": "About Pizza 5",
             "price": 105.05,
+            "AdInfo": "lalalala крута піца, найркаща піца - це піца №5",
             "image": "media/pizza5.jpg",
             "categoryId": 2
         },
@@ -58,6 +65,7 @@
             "productName": "Pizza 6",
             "productDescription": "About Pizza 6",
             "price": 106.05,
+            "AdInfo": "lalalala крута піца, найркаща піца - це піца №6",
             "image": "media/pizza6.jpg",
             "categoryId": 3
         }
