@@ -7,28 +7,30 @@
     <meta charset="utf-8"/> 
     <title>Тоббі Піца</title>
 </head>
-<body onhashchange="hashchanged()" onload="hashchanged()">
+<body onhashchange="hashchanged()">
   <div>
       <a id='info'>Тоббі Піца</a>
   </div>
   <nav style="position: sticky; top: 0">
-    <a href="#all">Всі</a>
-    <a href="#type1">Тип1</a>
-    <a href="#type2">Тип2</a>
-    <a href="#type3">Тип3</a>
+    <a href="#home">Головна</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#catalog/type1">Тип1</a>
+    <a href="#catalog/type2">Тип2</a>
+    <a href="#catalog/type3">Тип3</a>
+    <a id ="cart" href="#cart">Кошик</a>
   </nav>
-  <div class="slider-all">
+  
+  <div id="loader" style="text-align: center; background-color: lemonchiffon;"><img src = "media/loader.gif" width="300x" height="300px"></div>
+  <div class="slider-all" style="text-align: center; display: none">
     <input checked type="radio" name="respond" id="desktop">
 			<article id="slider">
 					<input checked type="radio" name="slider" id="switch1">
 					<input type="radio" name="slider" id="switch2">
-					<input type="radio" name="slider" id="switch3">
+          <input type="radio" name="slider" id="switch3">
 				<div id="slides">
 					<div id="overflow">
 						<div class="image">
-							<article><img src="media/r1.png"></article>
-							<article><img src="media/r2.png"></article>
-							<article><img src="media/r3.png"></article>
+              
 						</div>
 					</div>
 				</div>
@@ -40,105 +42,15 @@
 			</article>
   </div>
   <main>
-    <div id="allt" style="display: none">
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 1</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 2</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 3</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 4</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 5</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 6</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 7</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 8</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 9</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 10</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 11</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 12</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 13</h2>
-        <p>Опис товару</p>
-      </article>
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 14</h2>
-        <p>Опис товару, прям гіпер моща ля-ля-ля</p>
-      </article>
-    </div>
-    <div id="Type1" style="display: none">
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Товар 14</h2>
-        <p>Опис товару, прям гіпер моща ля-ля-ля</p>
-      </article>
-    </div>
-    <div id="Type2" style="display: none">
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Type2</h2>
-        <p>Опис товару, прям гіпер моща ля-ля-ля</p>
-      </article>
-    </div>
-    <div id="Type3" style="display: none">
-      <article>
-        <img src= "media/pizza.jpg" alt="tovar" title="Фото товару">
-        <h2>Type3</h2>
-        <p>Опис товару, прям гіпер моща ля-ля-ля</p>
-      </article>
+    <div id="list">
+      
     </div>
   </main>
   <footer>
-    <div style="color: yellowgreen;">Подвальчік ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла</div>
-    <nav style="float:right">
-      <a>Клік</a>
-    </nav>
+    <div>Подвальчік ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла</div>
+    <div>Спонсори - BMW, Nissan, Google, Amazon, USA, Ukrain та всі інші</div>
+    <div>Гаряча лінія +380953193581</div>
+    <div>Дуже-дуже гаряча</div>
   </footer>
 </body>
 </html>

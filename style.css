@@ -15,7 +15,7 @@ nav
     background-color: #333;
     overflow: hidden;
 }
-#allt, #Type1, #Type2, #Type3
+#list
 {
     overflow: auto;
     display: flex;
@@ -23,11 +23,13 @@ nav
     justify-content: flex-start;
     align-content: flex-start;
     height: auto;
+    overflow: visible;
 }
 main
 {
     padding: 2%;
     padding-right: 0%;
+    padding-bottom: 20%;
     overflow: auto;
     background-color: lemonchiffon;
     height: auto;
@@ -68,6 +70,7 @@ nav a.active
 }
 main article 
 {
+    cursor: pointer;
     display: grid;
     grid-gap: 0pt;
     width: 15.3%;
@@ -82,7 +85,6 @@ main article img
     width: 100%;
     height: auto;
     object-fit: cover;
-    cursor: pointer;
 }
 main article h2
 {
@@ -90,6 +92,7 @@ main article h2
     height: auto;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 0%;
 }
 main article p
 {
@@ -97,13 +100,18 @@ main article p
     text-align: center;
     margin: 0%;
     height: auto;
-    min-height: 3rem;
+    min-height: 2.5rem;
     max-height: 10rem;
     overflow: auto;
 }
 footer
 {
-    float: right;
+    padding: 1rem;
+    color: yellowgreen;
+    display: grid;
+    grid-gap: 10%;
+    grid-row-gap: 50%;
+    grid-template-columns: 50% 50%;
 }
 /*Slider*/
 .slider-all
@@ -135,18 +143,14 @@ footer
 
 .slider-all article img
 {
+    cursor: pointer;
     width: 100%;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: none;
-    pointer-events: none;
+
 }
 
 #desktop:checked ~ #slider
 {
-	width: 100%;
+    width: 100%;
 }
 
 label
@@ -217,4 +221,55 @@ label
     {
         font-size: 0.7rem;
     }
+}
+
+/*spiner*/
+.spinner {
+    animation: rotate 2s linear infinite;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+}
+.path 
+{
+      stroke: hsl(210, 70, 75);
+      stroke-linecap: round;
+      animation: dash 1.5s ease-in-out infinite;
+}
+    
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
+
+/*valid*/
+input:valid 
+{
+    border: 0.2rem solid green;
+}
+  
+input:invalid 
+{
+    border: 0.2rem solid red;
 }
